@@ -1,0 +1,9 @@
+th{
+    border: 2px solid lightblue;
+}
+td{border: 1px solid lightblue;}
+textarea{ border: 1px solid lightblue;}
+p{color: rgb(136, 177, 177);}
+h4{ color: rgb(133, 199, 199);}
+h1{color: firebrick;}
+label{color: lightblue;}
