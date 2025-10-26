@@ -1,12 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project/Peer Feedback Form</title>
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project / Peer Feedback Form</title>
+  <link rel="stylesheet" href="modify.css">
 </head>
+
 <body>
+  <h1>Project / Peer Feedback Form</h1>
+
+  <!-- Use method and action properly -->
+  <form method="post" action="#">
+
+    <!-- Section A: General Information -->
+    <h4>Section A — General Information</h4>
+
+    <div>
+      <label for="projectTitle">Project Title:</label>
+      <input type="text" name="projectTitle" id="projectTitle" placeholder="Project Title">
+    </div>
+
+    <div>
+      <label for="teamName">Team / Group Name:</label>
+      <input type="text" name="teamName" id="teamName" placeholder="Team / Group Name">
+    </div>
+
+    <div>
+      <label for="yourName">Your Name (optional):</label>
+      <input type="text" name="yourName" id="yourName" placeholder="Your Name (optional)">
+    </div>
+
+    <div>
+      <label for="date">Date:</label>
+      <input type="date" name="date" id="date">
+    </div>
+
+    <div>
+      <p><strong>1. Feedback Type:</strong></p>
+      <input type="radio" name="feedbackType" id="peerFeedback" value="Peer Feedback">
+      <label for="peerFeedback">Peer Feedback</label>
+      <input type="radio" name="feedbackType" id="projectEvaluation" value="Project Evaluation">
+      <label for="projectEvaluation">Project Evaluation</label>
+      <input type="radio" name="feedbackType" id="both" value="Both">
+      <label for="both">Both</label>
+    </div>
+
+    <div>
+      <p><strong>2. Project Role:</strong></p>
+      <input type="checkbox" name="role" id="teamLeader" value="Team Leader">
+      <label for="teamLeader">Team Leader</label>
+      <input type="checkbox" name="role" id="contributor" value="Contributor">
+      <label for="contributor">Contributor</label>
+      <input type="checkbox" name="role" id="reviewer" value="Reviewer">
+      <label for="reviewer">Reviewer</label>
+      <label for="otherRole">Other:</label>
+      <input type="text" name="otherRole" id="otherRole">
+    </div>
+
     
+    <h4>Section B — Peer Evaluation</h4>
+    <p>(Please rate your team members on a scale of 1 to 5, where 1 = Very Poor and 5 = Excellent)</p>
+
+    <table border="1">
+      <tr>
+        <th>Criteria</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+      </tr>
+
+      <tr>
+        <td>Quality of contributions</td>
+        <td><input type="radio" name="quality" value="1"></td>
+        <td><input type="radio" name="quality" value="2"></td>
+        <td><input type="radio" name="quality" value="3"></td>
+        <td><input type="radio" name="quality" value="4"></td>
+        <td><input type="radio" name="quality" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Reliability and punctuality</td>
+        <td><input type="radio" name="reliability" value="1"></td>
+        <td><input type="radio" name="reliability" value="2"></td>
+        <td><input type="radio" name="reliability" value="3"></td>
+        <td><input type="radio" name="reliability" value="4"></td>
+        <td><input type="radio" name="reliability" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Communication and collaboration</td>
+        <td><input type="radio" name="communication" value="1"></td>
+        <td><input type="radio" name="communication" value="2"></td>
+        <td><input type="radio" name="communication" value="3"></td>
+        <td><input type="radio" name="communication" value="4"></td>
+        <td><input type="radio" name="communication" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Initiative and problem solving</td>
+        <td><input type="radio" name="initiative" value="1"></td>
+        <td><input type="radio" name="initiative" value="2"></td>
+        <td><input type="radio" name="initiative" value="3"></td>
+        <td><input type="radio" name="initiative" value="4"></td>
+        <td><input type="radio" name="initiative" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Respect and professionalism</td>
+        <td><input type="radio" name="respect" value="1"></td>
+        <td><input type="radio" name="respect" value="2"></td>
+        <td><input type="radio" name="respect" value="3"></td>
+        <td><input type="radio" name="respect" value="4"></td>
+        <td><input type="radio" name="respect" value="5"></td>
+      </tr>
+    </table>
+    <h4>Section C — Project Evaluation</h4>
+    <p>(For overall team/project performance)</p>
+
+    <table border="1">
+      <tr>
+        <th>Aspect</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+      </tr>
+
+      <tr>
+        <td>Clarity of project goals and objectives</td>
+        <td><input type="radio" name="clarity" value="1"></td>
+        <td><input type="radio" name="clarity" value="2"></td>
+        <td><input type="radio" name="clarity" value="3"></td>
+        <td><input type="radio" name="clarity" value="4"></td>
+        <td><input type="radio" name="clarity" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Team planning and coordination</td>
+        <td><input type="radio" name="planning" value="1"></td>
+        <td><input type="radio" name="planning" value="2"></td>
+        <td><input type="radio" name="planning" value="3"></td>
+        <td><input type="radio" name="planning" value="4"></td>
+        <td><input type="radio" name="planning" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Creativity and innovation</td>
+        <td><input type="radio" name="creativity" value="1"></td>
+        <td><input type="radio" name="creativity" value="2"></td>
+        <td><input type="radio" name="creativity" value="3"></td>
+        <td><input type="radio" name="creativity" value="4"></td>
+        <td><input type="radio" name="creativity" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Quality of final deliverables</td>
+        <td><input type="radio" name="qualityDeliverable" value="1"></td>
+        <td><input type="radio" name="qualityDeliverable" value="2"></td>
+        <td><input type="radio" name="qualityDeliverable" value="3"></td>
+        <td><input type="radio" name="qualityDeliverable" value="4"></td>
+        <td><input type="radio" name="qualityDeliverable" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Adherence to deadlines and milestones</td>
+        <td><input type="radio" name="deadlines" value="1"></td>
+        <td><input type="radio" name="deadlines" value="2"></td>
+        <td><input type="radio" name="deadlines" value="3"></td>
+        <td><input type="radio" name="deadlines" value="4"></td>
+        <td><input type="radio" name="deadlines" value="5"></td>
+      </tr>
+
+      <tr>
+        <td>Overall team performance</td>
+        <td><input type="radio" name="overall" value="1"></td>
+        <td><input type="radio" name="overall" value="2"></td>
+        <td><input type="radio" name="overall" value="3"></td>
+        <td><input type="radio" name="overall" value="4"></td>
+        <td><input type="radio" name="overall" value="5"></td>
+      </tr>
+    </table>
+    <h4>Section D — Open-Ended Feedback</h4>
+    <p>1. What were the strongest aspects of the project or team collaboration?</p>
+    <textarea name="strengths" rows="4" cols="50"></textarea>
+
+    <p>2. What areas or behaviors could be improved?</p>
+    <textarea name="improvements" rows="4" cols="50"></textarea>
+
+    <p>3. How effectively did team members communicate and resolve conflicts?</p>
+    <textarea name="communicationFeedback" rows="4" cols="50"></textarea>
+
+    <p>4. Additional comments or suggestions:</p>
+    <textarea name="comments" rows="4" cols="50"></textarea>
+
+    <h4>Section E — Summary</h4>
+    <p>Overall Rating:</p>
+    <input type="radio" name="rating" id="excellent" value="Excellent">
+    <label for="excellent">Excellent</label>
+    <input type="radio" name="rating" id="good" value="Good">
+    <label for="good">Good</label>
+    <input type="radio" name="rating" id="fair" value="Fair">
+    <label for="fair">Fair</label>
+    <input type="radio" name="rating" id="poor" value="Poor">
+    <label for="poor">Poor</label>
+
+    <div>
+      <p>
+        <input type="checkbox" id="confirmation" name="confirmation" required>
+        <label for="confirmation">I confirm that the feedback provided reflects my honest and fair evaluation of the project and/or my peers.</label>
+      </p>
+    </div>
+
+    <div>
+      <label for="signature">Signature (optional):</label>
+      <input type="text" name="signature" id="signature" placeholder="Your Signature">
+      <label for="signDate">Date:</label>
+      <input type="date" name="signDate" id="signDate">
+    </div>
+
+    <div>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </div>
+  </form>
 </body>
 </html>
